@@ -1,2 +1,3 @@
-# homophones
-Analysis of homophones.
+# Homophones
+
+Analysis of homophone semantic similarity.
