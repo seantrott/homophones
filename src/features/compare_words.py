@@ -48,7 +48,7 @@ for w1, w2 in tqdm(combinations):
 	orthographic_neighborhood_w2 = CorpusUtilities.orthographic_similarity(
 		word=w2_word, lexicon=list(df_subset['Word']))
 	# get meaning distance
-	# meaning_distance = model.similarity(w1_word, w2_word)
+	meaning_distance = model.similarity(w1_word, w2_word)
 	# Get frequencies
 	high_freq = max([w1_row['CobLog'].iloc[0], w2_row['CobLog'].iloc[0]])
 	low_freq = min([w1_row['CobLog'].iloc[0], w2_row['CobLog'].iloc[0]])
